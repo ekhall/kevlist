@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE0B5C1B165939F100459EF6 /* KevList.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B5C1A165939F100459EF6 /* KevList.m */; };
+		AE0B5C2016594C0B00459EF6 /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B5C1F16594C0B00459EF6 /* ListDetailViewController.m */; };
+		AE0B5C2316597A8900459EF6 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B5C2216597A8900459EF6 /* DataModel.m */; };
+		AE226595165AF5C000A0156B /* Appointments.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226581165AF5C000A0156B /* Appointments.png */; };
+		AE226596165AF5C000A0156B /* Appointments@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226582165AF5C000A0156B /* Appointments@2x.png */; };
+		AE226597165AF5C000A0156B /* Birthdays.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226583165AF5C000A0156B /* Birthdays.png */; };
+		AE226598165AF5C000A0156B /* Birthdays@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226584165AF5C000A0156B /* Birthdays@2x.png */; };
+		AE226599165AF5C000A0156B /* Chores.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226585165AF5C000A0156B /* Chores.png */; };
+		AE22659A165AF5C000A0156B /* Chores@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226586165AF5C000A0156B /* Chores@2x.png */; };
+		AE22659B165AF5C000A0156B /* Drinks.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226587165AF5C000A0156B /* Drinks.png */; };
+		AE22659C165AF5C000A0156B /* Drinks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226588165AF5C000A0156B /* Drinks@2x.png */; };
+		AE22659D165AF5C000A0156B /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226589165AF5C000A0156B /* Folder.png */; };
+		AE22659E165AF5C000A0156B /* Folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE22658A165AF5C000A0156B /* Folder@2x.png */; };
+		AE22659F165AF5C000A0156B /* Groceries.png in Resources */ = {isa = PBXBuildFile; fileRef = AE22658B165AF5C000A0156B /* Groceries.png */; };
+		AE2265A0165AF5C000A0156B /* Groceries@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE22658C165AF5C000A0156B /* Groceries@2x.png */; };
+		AE2265A1165AF5C000A0156B /* Inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = AE22658D165AF5C000A0156B /* Inbox.png */; };
+		AE2265A2165AF5C000A0156B /* Inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE22658E165AF5C000A0156B /* Inbox@2x.png */; };
+		AE2265A3165AF5C000A0156B /* No Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE22658F165AF5C000A0156B /* No Icon.png */; };
+		AE2265A4165AF5C000A0156B /* No Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226590165AF5C000A0156B /* No Icon@2x.png */; };
+		AE2265A5165AF5C000A0156B /* Photos.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226591165AF5C000A0156B /* Photos.png */; };
+		AE2265A6165AF5C000A0156B /* Photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226592165AF5C000A0156B /* Photos@2x.png */; };
+		AE2265A7165AF5C000A0156B /* Trips.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226593165AF5C000A0156B /* Trips.png */; };
+		AE2265A8165AF5C000A0156B /* Trips@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE226594165AF5C000A0156B /* Trips@2x.png */; };
+		AE2265AC165AF73A00A0156B /* IconPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2265AB165AF73A00A0156B /* IconPickerViewController.m */; };
+		AE2A9722165C0ABA00F9F777 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A9719165C0ABA00F9F777 /* Icon-72.png */; };
+		AE2A9723165C0ABA00F9F777 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A971A165C0ABA00F9F777 /* Icon-72@2x.png */; };
+		AE2A9724165C0ABA00F9F777 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A971B165C0ABA00F9F777 /* Icon-Small-50.png */; };
+		AE2A9725165C0ABA00F9F777 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A971C165C0ABA00F9F777 /* Icon-Small-50@2x.png */; };
+		AE2A9726165C0ABA00F9F777 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A971D165C0ABA00F9F777 /* Icon-Small.png */; };
+		AE2A9727165C0ABA00F9F777 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A971E165C0ABA00F9F777 /* Icon-Small@2x.png */; };
+		AE2A9728165C0ABA00F9F777 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A971F165C0ABA00F9F777 /* Icon.png */; };
+		AE2A9729165C0ABA00F9F777 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A9720165C0ABA00F9F777 /* Icon@2x.png */; };
+		AE2A972A165C0ABA00F9F777 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = AE2A9721165C0ABA00F9F777 /* iTunesArtwork */; };
+		AE2A972F165C0C1E00F9F777 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A972D165C0C1E00F9F777 /* Default.png */; };
+		AE2A9730165C0C1E00F9F777 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A972E165C0C1E00F9F777 /* Default@2x.png */; };
+		AE34189B165C32BF00410DA1 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE34189A165C32BF00410DA1 /* DatePickerViewController.m */; };
+		AE414BE616505C3A0056C5A0 /* AllListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE414BE516505C3A0056C5A0 /* AllListsViewController.m */; };
+		AE418342163D9A150040644C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE418341163D9A150040644C /* UIKit.framework */; };
+		AE418344163D9A150040644C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE418343163D9A150040644C /* Foundation.framework */; };
+		AE418346163D9A150040644C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE418345163D9A150040644C /* CoreGraphics.framework */; };
+		AE41834C163D9A150040644C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE41834A163D9A150040644C /* InfoPlist.strings */; };
+		AE41834E163D9A150040644C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41834D163D9A150040644C /* main.m */; };
+		AE418352163D9A150040644C /* KevListAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE418351163D9A150040644C /* KevListAppDelegate.m */; };
+		AE418354163D9A150040644C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AE418353163D9A150040644C /* Default.png */; };
+		AE418356163D9A150040644C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE418355163D9A150040644C /* Default@2x.png */; };
+		AE418358163D9A150040644C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE418357163D9A150040644C /* Default-568h@2x.png */; };
+		AE41835B163D9A150040644C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE418359163D9A150040644C /* MainStoryboard.storyboard */; };
+		AE41835E163D9A150040644C /* KevListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41835D163D9A150040644C /* KevListViewController.m */; };
+		AE41836A163DB71D0040644C /* KevListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AE418369163DB71D0040644C /* KevListItem.m */; };
+		AE41836D163DD83E0040644C /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41836C163DD83E0040644C /* ItemDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE0B5C19165939F100459EF6 /* KevList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KevList.h; sourceTree = "<group>"; };
+		AE0B5C1A165939F100459EF6 /* KevList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KevList.m; sourceTree = "<group>"; };
+		AE0B5C1E16594C0B00459EF6 /* ListDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDetailViewController.h; sourceTree = "<group>"; };
+		AE0B5C1F16594C0B00459EF6 /* ListDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDetailViewController.m; sourceTree = "<group>"; };
+		AE0B5C2116597A8900459EF6 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		AE0B5C2216597A8900459EF6 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		AE226581165AF5C000A0156B /* Appointments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Appointments.png; sourceTree = "<group>"; };
+		AE226582165AF5C000A0156B /* Appointments@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appointments@2x.png"; sourceTree = "<group>"; };
+		AE226583165AF5C000A0156B /* Birthdays.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Birthdays.png; sourceTree = "<group>"; };
+		AE226584165AF5C000A0156B /* Birthdays@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Birthdays@2x.png"; sourceTree = "<group>"; };
+		AE226585165AF5C000A0156B /* Chores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chores.png; sourceTree = "<group>"; };
+		AE226586165AF5C000A0156B /* Chores@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chores@2x.png"; sourceTree = "<group>"; };
+		AE226587165AF5C000A0156B /* Drinks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Drinks.png; sourceTree = "<group>"; };
+		AE226588165AF5C000A0156B /* Drinks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Drinks@2x.png"; sourceTree = "<group>"; };
+		AE226589165AF5C000A0156B /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
+		AE22658A165AF5C000A0156B /* Folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Folder@2x.png"; sourceTree = "<group>"; };
+		AE22658B165AF5C000A0156B /* Groceries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Groceries.png; sourceTree = "<group>"; };
+		AE22658C165AF5C000A0156B /* Groceries@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Groceries@2x.png"; sourceTree = "<group>"; };
+		AE22658D165AF5C000A0156B /* Inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inbox.png; sourceTree = "<group>"; };
+		AE22658E165AF5C000A0156B /* Inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inbox@2x.png"; sourceTree = "<group>"; };
+		AE22658F165AF5C000A0156B /* No Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "No Icon.png"; sourceTree = "<group>"; };
+		AE226590165AF5C000A0156B /* No Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "No Icon@2x.png"; sourceTree = "<group>"; };
+		AE226591165AF5C000A0156B /* Photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Photos.png; sourceTree = "<group>"; };
+		AE226592165AF5C000A0156B /* Photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Photos@2x.png"; sourceTree = "<group>"; };
+		AE226593165AF5C000A0156B /* Trips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trips.png; sourceTree = "<group>"; };
+		AE226594165AF5C000A0156B /* Trips@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Trips@2x.png"; sourceTree = "<group>"; };
+		AE2265AA165AF73A00A0156B /* IconPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconPickerViewController.h; sourceTree = "<group>"; };
+		AE2265AB165AF73A00A0156B /* IconPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconPickerViewController.m; sourceTree = "<group>"; };
+		AE2A9719165C0ABA00F9F777 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		AE2A971A165C0ABA00F9F777 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		AE2A971B165C0ABA00F9F777 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		AE2A971C165C0ABA00F9F777 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		AE2A971D165C0ABA00F9F777 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		AE2A971E165C0ABA00F9F777 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		AE2A971F165C0ABA00F9F777 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		AE2A9720165C0ABA00F9F777 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		AE2A9721165C0ABA00F9F777 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		AE2A972D165C0C1E00F9F777 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AE2A972E165C0C1E00F9F777 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AE341899165C32BF00410DA1 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		AE34189A165C32BF00410DA1 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		AE414BE416505C3A0056C5A0 /* AllListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllListsViewController.h; sourceTree = "<group>"; };
+		AE414BE516505C3A0056C5A0 /* AllListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllListsViewController.m; sourceTree = "<group>"; };
+		AE41833D163D9A150040644C /* KevList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KevList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE418341163D9A150040644C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE418343163D9A150040644C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE418345163D9A150040644C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE418349163D9A150040644C /* KevList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KevList-Info.plist"; sourceTree = "<group>"; };
+		AE41834B163D9A150040644C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE41834D163D9A150040644C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE41834F163D9A150040644C /* KevList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KevList-Prefix.pch"; sourceTree = "<group>"; };
+		AE418350163D9A150040644C /* KevListAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KevListAppDelegate.h; sourceTree = "<group>"; };
+		AE418351163D9A150040644C /* KevListAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KevListAppDelegate.m; sourceTree = "<group>"; };
+		AE418353163D9A150040644C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AE418355163D9A150040644C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AE418357163D9A150040644C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AE41835A163D9A150040644C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AE41835C163D9A150040644C /* KevListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KevListViewController.h; sourceTree = "<group>"; };
+		AE41835D163D9A150040644C /* KevListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KevListViewController.m; sourceTree = "<group>"; };
+		AE418368163DB71D0040644C /* KevListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KevListItem.h; sourceTree = "<group>"; };
+		AE418369163DB71D0040644C /* KevListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KevListItem.m; sourceTree = "<group>"; };
+		AE41836B163DD83E0040644C /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		AE41836C163DD83E0040644C /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE41833A163D9A150040644C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE418342163D9A150040644C /* UIKit.framework in Frameworks */,
+				AE418344163D9A150040644C /* Foundation.framework in Frameworks */,
+				AE418346163D9A150040644C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE0B5C1D16593A0300459EF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B5C2116597A8900459EF6 /* DataModel.h */,
+				AE0B5C2216597A8900459EF6 /* DataModel.m */,
+				AE0B5C19165939F100459EF6 /* KevList.h */,
+				AE0B5C1A165939F100459EF6 /* KevList.m */,
+				AE418368163DB71D0040644C /* KevListItem.h */,
+				AE418369163DB71D0040644C /* KevListItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AE226580165AF5BF00A0156B /* Checklist Icons */ = {
+			isa = PBXGroup;
+			children = (
+				AE226581165AF5C000A0156B /* Appointments.png */,
+				AE226582165AF5C000A0156B /* Appointments@2x.png */,
+				AE226583165AF5C000A0156B /* Birthdays.png */,
+				AE226584165AF5C000A0156B /* Birthdays@2x.png */,
+				AE226585165AF5C000A0156B /* Chores.png */,
+				AE226586165AF5C000A0156B /* Chores@2x.png */,
+				AE226587165AF5C000A0156B /* Drinks.png */,
+				AE226588165AF5C000A0156B /* Drinks@2x.png */,
+				AE226589165AF5C000A0156B /* Folder.png */,
+				AE22658A165AF5C000A0156B /* Folder@2x.png */,
+				AE22658B165AF5C000A0156B /* Groceries.png */,
+				AE22658C165AF5C000A0156B /* Groceries@2x.png */,
+				AE22658D165AF5C000A0156B /* Inbox.png */,
+				AE22658E165AF5C000A0156B /* Inbox@2x.png */,
+				AE22658F165AF5C000A0156B /* No Icon.png */,
+				AE226590165AF5C000A0156B /* No Icon@2x.png */,
+				AE226591165AF5C000A0156B /* Photos.png */,
+				AE226592165AF5C000A0156B /* Photos@2x.png */,
+				AE226593165AF5C000A0156B /* Trips.png */,
+				AE226594165AF5C000A0156B /* Trips@2x.png */,
+			);
+			path = "Checklist Icons";
+			sourceTree = "<group>";
+		};
+		AE2A9718165C0ABA00F9F777 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A9719165C0ABA00F9F777 /* Icon-72.png */,
+				AE2A971A165C0ABA00F9F777 /* Icon-72@2x.png */,
+				AE2A971B165C0ABA00F9F777 /* Icon-Small-50.png */,
+				AE2A971C165C0ABA00F9F777 /* Icon-Small-50@2x.png */,
+				AE2A971D165C0ABA00F9F777 /* Icon-Small.png */,
+				AE2A971E165C0ABA00F9F777 /* Icon-Small@2x.png */,
+				AE2A971F165C0ABA00F9F777 /* Icon.png */,
+				AE2A9720165C0ABA00F9F777 /* Icon@2x.png */,
+				AE2A9721165C0ABA00F9F777 /* iTunesArtwork */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		AE2A972C165C0C1E00F9F777 /* Launch Images */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A972D165C0C1E00F9F777 /* Default.png */,
+				AE2A972E165C0C1E00F9F777 /* Default@2x.png */,
+			);
+			path = "Launch Images";
+			sourceTree = "<group>";
+		};
+		AE418332163D9A150040644C = {
+			isa = PBXGroup;
+			children = (
+				AE418347163D9A150040644C /* KevList */,
+				AE418340163D9A150040644C /* Frameworks */,
+				AE41833E163D9A150040644C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE41833E163D9A150040644C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE41833D163D9A150040644C /* KevList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE418340163D9A150040644C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE418341163D9A150040644C /* UIKit.framework */,
+				AE418343163D9A150040644C /* Foundation.framework */,
+				AE418345163D9A150040644C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE418347163D9A150040644C /* KevList */ = {
+			isa = PBXGroup;
+			children = (
+				AE418350163D9A150040644C /* KevListAppDelegate.h */,
+				AE418351163D9A150040644C /* KevListAppDelegate.m */,
+				AE418359163D9A150040644C /* MainStoryboard.storyboard */,
+				AE41835C163D9A150040644C /* KevListViewController.h */,
+				AE41835D163D9A150040644C /* KevListViewController.m */,
+				AE41836B163DD83E0040644C /* ItemDetailViewController.h */,
+				AE41836C163DD83E0040644C /* ItemDetailViewController.m */,
+				AE341899165C32BF00410DA1 /* DatePickerViewController.h */,
+				AE34189A165C32BF00410DA1 /* DatePickerViewController.m */,
+				AE414BE416505C3A0056C5A0 /* AllListsViewController.h */,
+				AE414BE516505C3A0056C5A0 /* AllListsViewController.m */,
+				AE0B5C1E16594C0B00459EF6 /* ListDetailViewController.h */,
+				AE0B5C1F16594C0B00459EF6 /* ListDetailViewController.m */,
+				AE2265AA165AF73A00A0156B /* IconPickerViewController.h */,
+				AE2265AB165AF73A00A0156B /* IconPickerViewController.m */,
+				AE0B5C1D16593A0300459EF6 /* Models */,
+				AE418348163D9A150040644C /* Supporting Files */,
+			);
+			path = KevList;
+			sourceTree = "<group>";
+		};
+		AE418348163D9A150040644C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A972C165C0C1E00F9F777 /* Launch Images */,
+				AE2A9718165C0ABA00F9F777 /* Icon */,
+				AE226580165AF5BF00A0156B /* Checklist Icons */,
+				AE418349163D9A150040644C /* KevList-Info.plist */,
+				AE41834A163D9A150040644C /* InfoPlist.strings */,
+				AE41834D163D9A150040644C /* main.m */,
+				AE41834F163D9A150040644C /* KevList-Prefix.pch */,
+				AE418353163D9A150040644C /* Default.png */,
+				AE418355163D9A150040644C /* Default@2x.png */,
+				AE418357163D9A150040644C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE41833C163D9A150040644C /* KevList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE418361163D9A150040644C /* Build configuration list for PBXNativeTarget "KevList" */;
+			buildPhases = (
+				AE418339163D9A150040644C /* Sources */,
+				AE41833A163D9A150040644C /* Frameworks */,
+				AE41833B163D9A150040644C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KevList;
+			productName = KevList;
+			productReference = AE41833D163D9A150040644C /* KevList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE418334163D9A150040644C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KevList;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "E. Kevin Hall";
+			};
+			buildConfigurationList = AE418337163D9A150040644C /* Build configuration list for PBXProject "KevList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE418332163D9A150040644C;
+			productRefGroup = AE41833E163D9A150040644C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE41833C163D9A150040644C /* KevList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE41833B163D9A150040644C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE41834C163D9A150040644C /* InfoPlist.strings in Resources */,
+				AE418354163D9A150040644C /* Default.png in Resources */,
+				AE418356163D9A150040644C /* Default@2x.png in Resources */,
+				AE418358163D9A150040644C /* Default-568h@2x.png in Resources */,
+				AE41835B163D9A150040644C /* MainStoryboard.storyboard in Resources */,
+				AE226595165AF5C000A0156B /* Appointments.png in Resources */,
+				AE226596165AF5C000A0156B /* Appointments@2x.png in Resources */,
+				AE226597165AF5C000A0156B /* Birthdays.png in Resources */,
+				AE226598165AF5C000A0156B /* Birthdays@2x.png in Resources */,
+				AE226599165AF5C000A0156B /* Chores.png in Resources */,
+				AE22659A165AF5C000A0156B /* Chores@2x.png in Resources */,
+				AE22659B165AF5C000A0156B /* Drinks.png in Resources */,
+				AE22659C165AF5C000A0156B /* Drinks@2x.png in Resources */,
+				AE22659D165AF5C000A0156B /* Folder.png in Resources */,
+				AE22659E165AF5C000A0156B /* Folder@2x.png in Resources */,
+				AE22659F165AF5C000A0156B /* Groceries.png in Resources */,
+				AE2265A0165AF5C000A0156B /* Groceries@2x.png in Resources */,
+				AE2265A1165AF5C000A0156B /* Inbox.png in Resources */,
+				AE2265A2165AF5C000A0156B /* Inbox@2x.png in Resources */,
+				AE2265A3165AF5C000A0156B /* No Icon.png in Resources */,
+				AE2265A4165AF5C000A0156B /* No Icon@2x.png in Resources */,
+				AE2265A5165AF5C000A0156B /* Photos.png in Resources */,
+				AE2265A6165AF5C000A0156B /* Photos@2x.png in Resources */,
+				AE2265A7165AF5C000A0156B /* Trips.png in Resources */,
+				AE2265A8165AF5C000A0156B /* Trips@2x.png in Resources */,
+				AE2A9722165C0ABA00F9F777 /* Icon-72.png in Resources */,
+				AE2A9723165C0ABA00F9F777 /* Icon-72@2x.png in Resources */,
+				AE2A9724165C0ABA00F9F777 /* Icon-Small-50.png in Resources */,
+				AE2A9725165C0ABA00F9F777 /* Icon-Small-50@2x.png in Resources */,
+				AE2A9726165C0ABA00F9F777 /* Icon-Small.png in Resources */,
+				AE2A9727165C0ABA00F9F777 /* Icon-Small@2x.png in Resources */,
+				AE2A9728165C0ABA00F9F777 /* Icon.png in Resources */,
+				AE2A9729165C0ABA00F9F777 /* Icon@2x.png in Resources */,
+				AE2A972A165C0ABA00F9F777 /* iTunesArtwork in Resources */,
+				AE2A972F165C0C1E00F9F777 /* Default.png in Resources */,
+				AE2A9730165C0C1E00F9F777 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE418339163D9A150040644C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE41834E163D9A150040644C /* main.m in Sources */,
+				AE418352163D9A150040644C /* KevListAppDelegate.m in Sources */,
+				AE41835E163D9A150040644C /* KevListViewController.m in Sources */,
+				AE41836A163DB71D0040644C /* KevListItem.m in Sources */,
+				AE41836D163DD83E0040644C /* ItemDetailViewController.m in Sources */,
+				AE414BE616505C3A0056C5A0 /* AllListsViewController.m in Sources */,
+				AE0B5C1B165939F100459EF6 /* KevList.m in Sources */,
+				AE0B5C2016594C0B00459EF6 /* ListDetailViewController.m in Sources */,
+				AE0B5C2316597A8900459EF6 /* DataModel.m in Sources */,
+				AE2265AC165AF73A00A0156B /* IconPickerViewController.m in Sources */,
+				AE34189B165C32BF00410DA1 /* DatePickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE41834A163D9A150040644C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE41834B163D9A150040644C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AE418359163D9A150040644C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE41835A163D9A150040644C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE41835F163D9A150040644C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE418360163D9A150040644C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE418362163D9A150040644C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KevList/KevList-Prefix.pch";
+				INFOPLIST_FILE = "KevList/KevList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AE418363163D9A150040644C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KevList/KevList-Prefix.pch";
+				INFOPLIST_FILE = "KevList/KevList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE418337163D9A150040644C /* Build configuration list for PBXProject "KevList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE41835F163D9A150040644C /* Debug */,
+				AE418360163D9A150040644C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE418361163D9A150040644C /* Build configuration list for PBXNativeTarget "KevList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE418362163D9A150040644C /* Debug */,
+				AE418363163D9A150040644C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE418334163D9A150040644C /* Project object */;
+}
