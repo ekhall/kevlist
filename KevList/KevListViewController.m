@@ -27,7 +27,7 @@
         controller.delegate     = self;
     }
     
-    // 2. The next transition is when an edit is needed
+    // 2. The next transition is when an edit is needed.
     else if ([segue.identifier isEqualToString:@"EditItem"]) {
         UINavigationController *navigationController = segue.destinationViewController;
         ItemDetailViewController *controller = (ItemDetailViewController *)navigationController.topViewController;
