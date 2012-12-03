@@ -37,6 +37,10 @@
 }
 
 # pragma mark - TableView
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 77;
+}
+
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }

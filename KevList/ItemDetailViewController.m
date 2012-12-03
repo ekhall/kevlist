@@ -42,18 +42,25 @@
 }
 
 - (IBAction)done {
+    
+    // If we are creating a new item (item to edit is nil)...
     if (self.itemToEdit == nil) {
         KevListItem *item = [[KevListItem alloc] init];
         item.text = self.textField.text;
         item.checked = NO;
         item.shouldRemind = self.switchControl.on;
         item.dueDate = dueDate;
+        [item scheduleNotification];
         
         [self.delegate itemDetailViewController:self didFinishAddingItem:item];
+        
+    // Else if we are editting an item...
     } else {
         self.itemToEdit.text = self.textField.text;
         self.itemToEdit.shouldRemind = self.switchControl.on;
         self.itemToEdit.dueDate = dueDate; 
+        [self.itemToEdit scheduleNotification];
+        
         [self.delegate itemDetailViewController:self didFinishEditingItem:self.itemToEdit];
     }
 }

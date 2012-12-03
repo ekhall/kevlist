@@ -17,5 +17,6 @@
 @property (nonatomic, copy) NSDate *dueDate;
 
 - (void)toggleChecked;
+- (void)scheduleNotification;
 
 @end

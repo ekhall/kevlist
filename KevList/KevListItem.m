@@ -11,6 +11,19 @@
 
 @implementation KevListItem
 
+- (void)scheduleNotification {
+    if ((self.shouldRemind) && [self.dueDate compare:[NSDate date]] != NSOrderedAscending) {
+        UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+        localNotification.fireDate      = self.dueDate;
+        localNotification.timeZone      = [NSTimeZone defaultTimeZone];
+        localNotification.alertBody     = self.text;
+        localNotification.soundName     = UILocalNotificationDefaultSoundName;
+        localNotification.userInfo      = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:self.itemId] forKey:@"ItemID"];
+        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+        NSLog(@"Scheduled notification %@ for %d", localNotification, self.itemId);
+    }
+}
+
 - (id)init {
     if (self = [super init])
         self.itemId = [DataModel nextKevlistItemId];
