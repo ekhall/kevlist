@@ -29,6 +29,13 @@
     self.date = [self.datePicker date];
 }
 
+- (void)updateDateLabel {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterFullStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    dateLabel.text = [formatter stringFromDate:self.date];
+}
+
 # pragma mark - TableView
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
@@ -37,7 +44,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DateCell"];
     dateLabel =  (UILabel *)[cell viewWithTag:1000];
-    //[self updateDateLabel]; // Bottom of page 113.
+    [self updateDateLabel];
     return cell;
 }
 
