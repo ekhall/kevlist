@@ -11,7 +11,36 @@
 
 @implementation KevListItem
 
+// This method checks to see if this item (self) already has a notification and, if so, returns it.
+// Otherwise it returns nil.
+- (UILocalNotification *)notificationForThisItem {
+    
+    // Create an array of all notifications handled by this app.
+    NSArray *allNotifications  = [[UIApplication sharedApplication] scheduledLocalNotifications];
+    
+    // Fast iteration through the array of all notifications.
+    for (UILocalNotification *notification in allNotifications) {
+        
+        // Find the NSNumber inside the dictionary for the key ItemID.
+        NSNumber *number = [notification.userInfo objectForKey:@"ItemID"];
+        
+        // If non-nil and the integer value is the same as our own itemId, return the notification.
+        if (number != nil && [number intValue] == self.itemId)
+            return notification;
+    }
+    return nil;
+}
+
 - (void)scheduleNotification {
+    // Create pointer to existing notification
+    UILocalNotification *existingNotification = [self notificationForThisItem];
+    
+    // If this is found (non nil), blow it away
+    if (existingNotification != nil) {
+        [[UIApplication sharedApplication] cancelLocalNotification:existingNotification];
+    }
+    
+    // Next, IF we need to create another notification, set it up.
     if ((self.shouldRemind) && [self.dueDate compare:[NSDate date]] != NSOrderedAscending) {
         UILocalNotification *localNotification = [[UILocalNotification alloc] init];
         localNotification.fireDate      = self.dueDate;
@@ -20,8 +49,9 @@
         localNotification.soundName     = UILocalNotificationDefaultSoundName;
         localNotification.userInfo      = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:self.itemId] forKey:@"ItemID"];
         [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-        NSLog(@"Scheduled notification %@ for %d", localNotification, self.itemId);
+        // NSLog(@"Scheduled notification %@ for %d", localNotification, self.itemId);
     }
+    // NSLog(@"All Notifications: %@", [[UIApplication sharedApplication] scheduledLocalNotifications]);
 }
 
 - (id)init {
@@ -53,6 +83,15 @@
     [aCoder encodeBool:self.shouldRemind forKey:@"ShouldRemind"];
     [aCoder encodeInt:self.itemId forKey:@"ItemId"];
     [aCoder encodeObject:self.dueDate forKey:@"DueDate"];
+}
+
+# pragma mark - Dealloc method
+- (void) dealloc {
+    UILocalNotification *existingNotification = [self notificationForThisItem];
+    if (existingNotification != nil) {
+//        NSLog(@"Removing notification %@", existingNotification);
+        [[UIApplication sharedApplication] cancelLocalNotification:existingNotification];
+    }
 }
 
 @end
