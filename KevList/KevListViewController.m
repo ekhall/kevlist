@@ -94,6 +94,7 @@
     
     // Config the checkmark for this cell based on the setting in the KevList
     [self configureCheckmarkForCell:cell withKevListItem:item];
+    
     return cell;
 }
 
@@ -121,7 +122,7 @@
 {
     UILabel *label  = (UILabel *)[cell viewWithTag:1000];
 //    label.text      = item.text;
-    label.text = [NSString stringWithFormat:@"(%d) %@", item.itemId, item.text];
+    label.text = [NSString stringWithFormat:@"%@", item.text];
 }
 
 - (void)configureCheckmarkForCell:(UITableViewCell *)cell withKevListItem:(KevListItem *)item
