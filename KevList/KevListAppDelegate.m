@@ -27,7 +27,7 @@
     
     
     UIImage *barButton = [[UIImage imageNamed:@"right-button.png"]
-                          resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+                          resizableImageWithCapInsets:UIEdgeInsetsMake(0, 6, 0, 6)];
     [[UIBarButtonItem appearance] setBackgroundImage:barButton
                                             forState:UIControlStateNormal
                                           barMetrics:UIBarMetricsDefault];
