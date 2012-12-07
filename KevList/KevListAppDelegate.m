@@ -21,14 +21,22 @@
 # pragma mark - Notifications
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    NSDate *date = [NSDate dateWithTimeIntervalSinceNow:5];
-//    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-//    localNotification.fireDate = date;
-//    localNotification.timeZone = [NSTimeZone defaultTimeZone];
-//    localNotification.alertBody = @"I am a local notification";
-//    localNotification.soundName = UILocalNotificationDefaultSoundName;
-//    
-//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    UIImage *navBarImage = [UIImage imageNamed:@"nav-bar.png"];
+    [[UINavigationBar appearance] setBackgroundImage:navBarImage
+                                       forBarMetrics:UIBarMetricsDefault];
+    
+    
+    UIImage *barButton = [[UIImage imageNamed:@"right-button.png"]
+                          resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    [[UIBarButtonItem appearance] setBackgroundImage:barButton
+                                            forState:UIControlStateNormal
+                                          barMetrics:UIBarMetricsDefault];
+    
+    UIImage *backButton = [[UIImage imageNamed:@"back-button.png"]
+                           resizableImageWithCapInsets:UIEdgeInsetsMake(0,15,0,6)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButton
+                                                      forState:UIControlStateNormal
+                                                    barMetrics:UIBarMetricsDefault];
     return YES;
 }
 
