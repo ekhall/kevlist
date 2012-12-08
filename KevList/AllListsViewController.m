@@ -11,7 +11,9 @@
 #import "KevList.h"
 #import "KevListItem.h"
 
-@implementation AllListsViewController
+@implementation AllListsViewController {
+    PFUser *currentUser;
+}
 
 # pragma mark - Coder
 - (id) initWithCoder:(NSCoder *)aDecoder
@@ -85,6 +87,13 @@
 
 - (void)userConfigViewControllerDidCancel:(ListDetailViewController *)controller
 {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)userConfigViewController:(UserConfigViewController *)controller didFinishLoggingIn:(PFUser *)user {
+    currentUser = user;
+    NSLog(@"Back in AllLists with user (%@)", [currentUser objectForKey:@"username"]);
+    self.navigationController.title = [currentUser objectForKey:@"username"];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
