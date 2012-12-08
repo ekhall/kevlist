@@ -2,6 +2,8 @@
 - Fixed things until page 122, lower. Not sure about going on with this here as I'm in iOS 6.
 - Things from lower page 122 to end not finished as not in iOS6.
 
+- Split into Parse Branch
+
 TODO:
 - Play around with texture support per WWDC video.
 - Implement syncing to external service. 
