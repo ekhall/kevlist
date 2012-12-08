@@ -21,6 +21,10 @@
 # pragma mark - Notifications
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [Parse setApplicationId:@"xygVF0DkN0ngLUJCwP0rw7kE3cNepXInNCqv8jn5"
+                  clientKey:@"i1brL5mBn4MVQ0gsOF73EzQZIR8MYr72IMWLR98r"];
+    
     UIImage *navBarImage = [UIImage imageNamed:@"nav-bar.png"];
     [[UINavigationBar appearance] setBackgroundImage:navBarImage
                                        forBarMetrics:UIBarMetricsDefault];

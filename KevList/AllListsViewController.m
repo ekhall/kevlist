@@ -50,6 +50,11 @@
         
         // This is just going to be nil, as we're adding. 
         controller.kevListToEdit            = nil;
+        
+    } else if ([segue.identifier isEqualToString:@"UserConfig"]) {
+        UINavigationController *navigationController  = segue.destinationViewController;
+        UserConfigViewController *controller          = (UserConfigViewController *)navigationController.topViewController;
+        controller.delegate                           = self;
     }
 }
 
@@ -75,6 +80,11 @@
     // kevlist is already within the model, so no adding, just sorting.
     [self.dataModel sortKevlists];
     [self.tableView reloadData];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)userConfigViewControllerDidCancel:(ListDetailViewController *)controller
+{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

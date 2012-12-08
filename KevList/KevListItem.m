@@ -89,7 +89,6 @@
 - (void) dealloc {
     UILocalNotification *existingNotification = [self notificationForThisItem];
     if (existingNotification != nil) {
-//        NSLog(@"Removing notification %@", existingNotification);
         [[UIApplication sharedApplication] cancelLocalNotification:existingNotification];
     }
 }
