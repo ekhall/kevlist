@@ -53,8 +53,8 @@
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ((indexPath.row == 2) && ![PFUser currentUser]) {
-        NSLog(@"tapped 2");
+    if (((indexPath.row == 2) || (indexPath.row == 1))&& ![PFUser currentUser]) {
+        NSLog(@"tapped %d", indexPath.row);
         return indexPath;
     }
     else
@@ -63,8 +63,14 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     if ([PFUser currentUser]) {
-        self.userTextField.text = [[PFUser currentUser] objectForKey:@"username"];
         self.loginButton.title = @"Logout";
+        
+        self.pwTextField.placeholder = nil;
+        [self.pwTextField setUserInteractionEnabled:NO];
+        
+        self.userTextField.text = [[PFUser currentUser] objectForKey:@"username"];
+        [self.userTextField setUserInteractionEnabled:NO];
+        
         self.userTextLabel.text = [NSString stringWithFormat:@"Welcome back %@!",
                           [[PFUser currentUser] objectForKey:@"username"]];
         self.userTextLabel.textAlignment = ALIGN_CENTER;

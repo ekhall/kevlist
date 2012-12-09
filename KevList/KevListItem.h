@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
 @interface KevListItem : NSObject <NSCoding>
 
 @property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSMutableArray *userNames;
 @property (nonatomic, assign) BOOL checked;
 @property (nonatomic, assign) BOOL shouldRemind;
 @property (nonatomic, assign) int itemId;

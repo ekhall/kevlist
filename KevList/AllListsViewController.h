@@ -15,6 +15,7 @@
 UINavigationControllerDelegate, UserConfigViewControllerDelegate>
 
 @property (nonatomic, strong) DataModel *dataModel;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *loginButton;
 
 
 @end

@@ -23,6 +23,7 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *loginButton;
 @property (strong, nonatomic) IBOutlet UITextField *userTextField;
 @property (strong, nonatomic) IBOutlet UITextField *pwTextField;
+@property (strong, nonatomic) IBOutlet UITableViewCell *pwCell;
 @property (strong, nonatomic) IBOutlet UILabel *userTextLabel;
 @property (strong, nonatomic) IBOutlet UITableViewCell *userCell;
 

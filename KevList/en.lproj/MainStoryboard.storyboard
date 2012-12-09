@@ -88,7 +88,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="KevLists" id="I4w-Ox-uUg">
-                        <barButtonItem key="leftBarButtonItem" title="User" id="bwm-Ho-Yhi">
+                        <barButtonItem key="leftBarButtonItem" title="Login" id="bwm-Ho-Yhi">
                             <connections>
                                 <segue destination="Edy-ur-odj" kind="modal" identifier="UserConfig" id="7ca-l7-t4P"/>
                             </connections>
@@ -100,6 +100,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="loginButton" destination="bwm-Ho-Yhi" id="3Bm-MS-gzN"/>
                         <segue destination="l7M-Sn-g47" kind="push" identifier="ShowKevList" id="wwD-4Z-Zfy"/>
                     </connections>
                 </tableViewController>
@@ -417,6 +418,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </navigationItem>
                     <connections>
                         <outlet property="loginButton" destination="8dn-54-6W6" id="pUI-mp-A0W"/>
+                        <outlet property="pwCell" destination="LRE-tB-rCK" id="Vck-gA-4bW"/>
                         <outlet property="pwTextField" destination="Hrb-Gh-l6H" id="0Nn-ak-oSu"/>
                         <outlet property="userCell" destination="Nfn-1K-cxU" id="cZe-mT-6kz"/>
                         <outlet property="userTextField" destination="o0N-G2-tt0" id="xzd-Ng-LLz"/>
@@ -587,60 +589,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="-141" y="350"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AllListsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AllListsViewController.h"/>
-        </class>
-        <class className="DatePickerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DatePickerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel"/>
-                <relationship kind="action" name="done"/>
-                <relationship kind="action" name="dueDateChanged"/>
-                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="IconPickerViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IconPickerViewController.h"/>
-        </class>
-        <class className="ItemDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel"/>
-                <relationship kind="action" name="done"/>
-                <relationship kind="outlet" name="doneBarButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="dueDateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="switchControl" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="KevListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KevListViewController.h"/>
-        </class>
-        <class className="ListDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel"/>
-                <relationship kind="action" name="done"/>
-                <relationship kind="outlet" name="doneBarButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="iconImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="UserConfigViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UserConfigViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel"/>
-                <relationship kind="action" name="login"/>
-                <relationship kind="outlet" name="loginButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="pwTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="userCell" candidateClass="UITableViewCell"/>
-                <relationship kind="outlet" name="userTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="userTextLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

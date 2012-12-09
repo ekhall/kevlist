@@ -50,6 +50,7 @@
         item.checked = NO;
         item.shouldRemind = self.switchControl.on;
         item.dueDate = dueDate;
+        [item.userNames addObject:[[PFUser currentUser] objectForKey:@"username"]];
         [item scheduleNotification];
         
         [self.delegate itemDetailViewController:self didFinishAddingItem:item];
@@ -59,6 +60,7 @@
         self.itemToEdit.text = self.textField.text;
         self.itemToEdit.shouldRemind = self.switchControl.on;
         self.itemToEdit.dueDate = dueDate; 
+        [self.itemToEdit.userNames addObject:[[PFUser currentUser] objectForKey:@"username"]];
         [self.itemToEdit scheduleNotification];
         
         [self.delegate itemDetailViewController:self didFinishEditingItem:self.itemToEdit];

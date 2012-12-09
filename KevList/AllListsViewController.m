@@ -206,6 +206,12 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    if ([[PFUser currentUser] isAuthenticated]) {
+        self.loginButton.title = [[PFUser currentUser] objectForKey:@"username"];
+    } else {
+        self.loginButton.title = @"Login";
+    }
+    
     // Everytime the view reappears, reload the tables to update the textfields
     [self.tableView reloadData];
 }

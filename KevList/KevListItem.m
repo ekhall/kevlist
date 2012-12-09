@@ -55,8 +55,10 @@
 }
 
 - (id)init {
-    if (self = [super init])
+    if (self = [super init]) {
         self.itemId = [DataModel nextKevlistItemId];
+        NSLog(@"Current user: %@", [[PFUser currentUser] objectForKey:@"username"]);
+    }
     return self;
 }
 
@@ -72,6 +74,7 @@
         self.shouldRemind   = [aDecoder decodeBoolForKey:@"ShouldRemind"];
         self.itemId         = [aDecoder decodeIntForKey:@"ItemId"];
         self.dueDate        = [aDecoder decodeObjectForKey:@"DueDate"];
+        self.userNames      = [aDecoder decodeObjectForKey:@"UserName"];
     }
     return self;
 }
@@ -83,6 +86,7 @@
     [aCoder encodeBool:self.shouldRemind forKey:@"ShouldRemind"];
     [aCoder encodeInt:self.itemId forKey:@"ItemId"];
     [aCoder encodeObject:self.dueDate forKey:@"DueDate"];
+    [aCoder encodeObject:self.userNames forKey:@"UserName"];
 }
 
 # pragma mark - Dealloc method
